@@ -18,7 +18,7 @@ db.loadDatabase();
 /*------ROUTES------*/
 
 //create a POST route to recieve the data
-app.post('/infoSave', (req,res) => {
+app.post('/infoSave', (req, res) => {
     console.log("Received a POST request!");
     console.log(req.body);
 
@@ -26,7 +26,7 @@ app.post('/infoSave', (req,res) => {
     db.insert(objToSave);
 
     //respond to the client
-    let message = {"status" : "success"};
+    let message = { "status": "success" };
     res.json(message);
 });
 
@@ -36,7 +36,7 @@ app.get('/data', (req, res) => {
 
     db.find({}, (err, docs) => {
         console.log(docs);
-        let allInfo = {"data": docs };
+        let allInfo = { "data": docs };
         //Send a response back to the client
         res.json(allInfo);
     });
@@ -44,6 +44,7 @@ app.get('/data', (req, res) => {
 
 
 
-app.listen(3000, ()=> {
-    console.log("listening at localhost:3000");
+let port = process.env.PORT || 3000;
+server.listen(port, () => {
+    console.log('listening at ', port);
 });
