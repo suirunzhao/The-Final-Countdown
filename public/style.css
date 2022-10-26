@@ -1,0 +1,41 @@
+body{
+    background-color: white;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;;
+}
+
+.heading {
+    text-align: center;
+}
+
+.input-info{
+    display: block;
+    width: 30%;
+    margin: 48px auto;
+}
+
+.name-input{
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin: auto;
+}
+
+.dob-input{
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin: auto;
+}
+
+.btn-1{
+    display: block;
+    width: 50%;
+    height: 20px;
+    margin: 48px auto;
+}
+
+.output-info{
+    text-align: center;
+    height: 40px;
+}
+
