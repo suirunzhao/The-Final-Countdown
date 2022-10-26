@@ -5,20 +5,20 @@ window.addEventListener('load', function () {
     fetch('/data')
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            //console.log(data);
         });
 
     document.getElementById('calculate').addEventListener('click', () => {
 
         //grab name
         let name = document.getElementById('name').value;
-        console.log(name);
+        //console.log(name);
 
         //grab dob
         let dobvalue = document.getElementById('dob').value;
         //replace - to /
         dob = dobvalue.replace(/-/g, '/');
-        console.log(dob);
+        //console.log(dob);
 
         //add year to dob
         let dobAddYear = Number(dobvalue.substr(0, 4)) + 72;
@@ -34,11 +34,11 @@ window.addEventListener('load', function () {
             "name": name,
             "dob": dob
         };
-        console.log(info);
+        //console.log(info);
 
         //make info JSON
         let infoJSON = JSON.stringify(info);
-        console.log(infoJSON);
+        //console.log(infoJSON);
 
         //send the JSON object to the server
         fetch('/infoSave', {
@@ -48,8 +48,8 @@ window.addEventListener('load', function () {
         })
             .then(res => res.json())
             .then(data => {
-                console.log("work?");
-                console.log(data);
+                //console.log("work?");
+                //console.log(data);
             })
 
         //get live date and time
