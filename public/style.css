@@ -28,14 +28,19 @@ body{
 }
 
 .btn-1{
-    display: block;
-    width: 50%;
-    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 40px;
     margin: 48px auto;
+    background-color: rgb(223, 223, 223);
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.output-info{
-    text-align: center;
-    height: 40px;
+h3{
+    color: black;
 }
 
