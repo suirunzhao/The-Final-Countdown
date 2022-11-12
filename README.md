@@ -1,4 +1,4 @@
-<h1>Project 2 Title: The Final Countdown</h1>
+<h1>Project 2: The Final Countdown</h1>
 
 <h3>Team:</h3> Nicole Padilla & Suirun (Siri) Zhao
 
