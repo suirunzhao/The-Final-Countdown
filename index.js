@@ -14,43 +14,40 @@ let Datastore = require('nedb');
 let db = new Datastore('info.db');
 db.loadDatabase();
 
-
 /*------ROUTES------*/
 
 //create a POST route to recieve the data
 app.post('/infoSave', (req, res) => {
     console.log("Received a POST request!");
-    console.log(req.body);
+    //console.log(req.body);
 
-    let objToSave = req.body;
-    db.insert(objToSave);
+    let currentDate = new Date().toLocaleString();
 
-    //respond to the client
-    let message = { "status": "success" };
-    res.json(message);
+    let objToSave = {
+        date: currentDate,
+        info: req.body
+    }
+    db.insert(objToSave,(err, newDocs)=>{
+        if(err) {
+            res.json({task: "task failed"});
+        } else {
+            res.json({task:"success"});
+        }
+
+    })
 });
 
 //create a GET route to send the data
 app.get('/data', (req, res) => {
     console.log("A GET req for the data")
-
-    db.find({}, (err, docs) => {
+    /* ------find and sort nedb data-------*/
+    db.find({}).sort({ date: 1 }).exec((err, docs) => {
         console.log(docs);
         let allInfo = { "data": docs };
         //Send a response back to the client
         res.json(allInfo);
     })
-    
-    /* ------Try to sort nedb data-------*/
-
-
-    // .sort({ createdAt: -1 }, (data) => {
-    //     console.log(data)
-    //     response.json(data)
-    //   });
 });
-
-
 
 //Initialize the actual HTTP server
 let http = require('http');

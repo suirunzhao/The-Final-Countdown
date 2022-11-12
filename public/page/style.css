@@ -1,0 +1,185 @@
+@font-face {
+    font-family: myFont;
+    src:url("https://cdn.glitch.global/053f5bff-da77-4abe-b93c-734171d17818/CormorantSC-Medium.ttf?v=1668006125292");
+}
+
+body {
+    background-color: black;
+    font-family: myFont;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+}
+
+.input-info {
+    display: block;
+    width: 30%;
+    margin: 48px auto;
+}
+
+.name-input {
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin: auto;
+}
+
+.dob-input {
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin: auto;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 40px;
+    margin: 48px auto;
+    background-color: black;
+    border:2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 16;
+    font-family: myFont;
+}
+
+h3 {
+    color: white;
+}
+
+
+.btn-1:hover{
+    color:black;
+    background-color: white;
+}
+
+
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+
+.Time {
+    text-align: center;
+    color: white
+}
+
+.output-info {
+    text-align: center;
+    color: white;
+    height: 40px;
+    margin: auto;
+}
+
+.time-showing p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-showing h1{
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 40px;
+}
+
+.time-showing h3{
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+.container2 {
+    margin-top: 40px;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    margin: 40px auto;
+    height: 20px;
+}
+
+.chat-input-name {
+    margin: auto;
+    color: white;
+}
+
+.chat-input-msg {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 40px;
+    margin: 48px auto;
+    background-color: black;
+    border:2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 16;
+    font-family: myFont;
+}
+
+.btn-2:hover{
+    color:black;
+    background-color: white;
+}
+
+.chat-feed {
+    flex-direction: column;
+    align-items: left;
+    margin: 40px auto;
+    width: 50%;
+    color: white;
+}
+
+.chat-box {
+    border: 2px solid white;
+    height: 3000px;
+    border-radius: 500px 500px 0 0;
+    background-color: black;
+    padding-left: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.long-live {
+    text-align: center;
+    color: white
+}
+
+.chat-title{
+    margin-top:80px;
+    margin-bottom:120px;
+    font-size: 40px;
+}
+
+.chat-title p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 800px) {
+    .sub-container {
+        width: 75%;
+    }
+}

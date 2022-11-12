@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Life Clock</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Life Clock</h1>
+    </div>
+
+    <!------- Page 2 ------->
+    <div class="input-info">
+        <h3>Name</h3>
+        <input type="text" class="name-input" id="name" placeholder="Name" />
+        <h3>Date of Birth</h3>
+        <input type="date" class="dob-input" id="dob" placeholder="Date of Birth" />
+        <div>
+            <a class="btn-1" id="calculate">
+                <p>Calculate</p>
+            </a>
+        </div>
+    </div>
+    
+    <!------- Page 3 ------->
+    <div class="output-info">
+        <div class="container1">
+            <div class="Time">
+                <h3 id="current-time"></h3>
+            </div>
+            <div class="time-showing">
+                <h3 class="living-time-value" id="living-time-value"> </h2>
+                <p class="living-time">since you have been to the earth</p>
+                <p>and</p>
+                <p class="remaining-time">You still have</p>
+                <h1 class="remaining-time-value" id="remaining-time-value"> </h1>
+            </div>
+        </div>
+    
+        <div class="container2">
+            <!-- Enter chat messages here -->
+            <div class="chat-input">
+                <h2 class="chat-input-name" id="name-input"></h2>
+                <input type="text" class="chat-input-msg" id="msg-input" placeholder="Leave your tombstone" />
+                <div>
+                    <a class="btn-2" id="send-button">
+                        <p>Send</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------- Page 4 ------->
+    <div class="chat-feed">
+        <div class="chat-box" id="chat-box-msgs">
+            <h2 class="chat-title">IMA Last Words</h2>
+        </div>
+    </div>
+
+    <!------- Page 5 ------->
+    <div class="long-live">
+            <h1>Long Live</h1>
+            <h1 id="long-live">IMA</h1>
+    </div>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>

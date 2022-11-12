@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
-    <link href="style.css" rel="stylesheet">
-    </link>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <title>Life Clock</title>
+    <title>THE FINAL COUNTDOWN</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
-
+<h1>THE FINAL COUNTDOWN</h1><br>
+<h2>How much time do you have left?</h2>
 <body>
-    <div class="heading">
-        <h1>Life Clock</h1>
+  <audio src="https://cdn.glitch.global/053f5bff-da77-4abe-b93c-734171d17818/clock-mp3.mp3?v=1668022790525" id="my_audio" loop="loop"><</audio>
+    <script type="text/javascript">
+    window.onload=function(){
+    document.getElementById("my_audio").play();
+    }
+    </script>
+    <img src="https://cdn.glitch.global/053f5bff-da77-4abe-b93c-734171d17818/Graveyard-background.jpg?v=1667774590283">;
+    <div class="container">  
+    <a href="/page">
+        <button>enter if you dare</button>
+    </a>
     </div>
-
-    <!-- Enter new info here -->
-    <div class="input-info">
-        <h3>Name</h3>
-        <input type="text" class="name-input" id="name" placeholder="Name" />
-        <h3>Date of Birth</h3>
-        <input type="date" class="dob-input" id="dob" placeholder="Date of Birth" />
-        <div>
-            <a href="/Message_Page/message.html" class="btn-1" id="calculate">
-                <h3>Calculate</h3>
-            </a>
-        </div>
-    </div>
+ 
     
 </body>
-
 </html>
